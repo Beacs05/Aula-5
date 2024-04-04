@@ -1,0 +1,11 @@
+#Exercício 3 - Valor, lucro, produto.
+produto = input("Digite o produto comprado: ")
+valor = float(input("Digite o valor da compra: "))
+if valor<10.00:
+    print(f"O valor da venda do produto {produto} é de %.2f"%(valor*0.7)) 
+elif valor<=10 and valor<30:
+    print(f"O valor da venda do produto {produto} é de %.2f"%(valor*0.5))
+elif valor<=30 and valor<50:
+    print(f"O valor da venda do produto {produto} é de %.2f"%(valor*0.4))
+else:
+    print(f"O valor da venda do produto {produto} é de %.2f"%(valor*0.3))
