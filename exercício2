@@ -1,0 +1,17 @@
+#Exercício 2 - Equação de segundo grau.
+import math
+a = float(input("Digite o valor da variável a: "))
+b = float(input("Digite o valor da variável b: "))
+c = float(input("Digite o valor da variável c: "))
+delta = (b**2) - 4*a*c
+if a==0:
+    print("Não é equação do segundo grau.")
+elif delta<0:
+    print("Não existem raízes reais.")
+elif delta>=0:
+    x1 = (-b+math.sqrt(delta))/(2*a)
+    x2 = (-b-math.sqrt(delta))/(2*a)
+    print("Os valores das raízes é de %.2f" % x1 , "e %.2f" % x2)
+else:
+    print("Valor inválido.")
+    
