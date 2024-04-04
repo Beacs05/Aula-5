@@ -1,0 +1,9 @@
+#Exercício 1 - Classificação eleitoral.
+idade = int(input("Insira a sua idade: "))
+if idade<16:
+    categoria='Não-eleitor'
+elif idade>=18 and idade<=65:
+    categoria='Eleitor obrigátorio'
+else:
+    categoria='Eleitor facultativo'
+print(f"Sua classe eleitoral é: {categoria}")
